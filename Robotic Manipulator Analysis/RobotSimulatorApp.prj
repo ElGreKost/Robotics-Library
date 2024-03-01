@@ -1,0 +1,77 @@
+<deployment-project plugin="plugin.webdeploy" plugin-version="1.0">
+  <configuration file="/home/kostiskak/MATLAB/Projects/RoboticsSemester/RobotSimulatorApp.prj" location="/home/kostiskak/MATLAB/Projects/RoboticsSemester" name="RobotSimulatorApp" target="target.webdeploy" target-name="Web App Compiler">
+    <param.appname>RobotSimulatorApp</param.appname>
+    <param.intermediate>${PROJECT_ROOT}/RobotSimulatorApp</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}/RobotSimulatorApp</param.files.only>
+    <param.output />
+    <param.checkbox>false</param.checkbox>
+    <param.logdir>${PROJECT_ROOT}/RobotSimulatorApp</param.logdir>
+    <param.target.type>subtarget.web.app</param.target.type>
+    <param.user.defined.mcr.options />
+    <param.support.packages />
+    <unset>
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.checkbox />
+      <param.logdir />
+      <param.target.type />
+      <param.user.defined.mcr.options />
+      <param.support.packages />
+    </unset>
+    <fileset.web.main>
+      <file>${PROJECT_ROOT}/RobotSimulatorApp.mlapp</file>
+    </fileset.web.main>
+    <fileset.resources />
+    <fileset.depfun />
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}/RobotSimulatorApp" name="RobotSimulatorApp.ctf" optional="false">/home/kostiskak/MATLAB/Projects/RoboticsSemester/RobotSimulatorApp/RobotSimulatorApp.ctf</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/usr/local/MATLAB/R2023b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>false</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>true</linux>
+      <solaris>false</solaris>
+      <osver>6.5.0-18-generic</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>glnxa64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
